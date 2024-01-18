@@ -87,6 +87,7 @@ a{
     display: flex;
     align-items: center;
     list-style: none;
+    padding-left: 0;
 }
 
 .user-navigation {
@@ -198,6 +199,16 @@ a{
 
 .appointment{
     width: 300px;
+}
+
+.appointment-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.appointment-item{
+    display: flex;
+    flex-direction: column;
 }
 
 .appointment-item input{
@@ -394,4 +405,8 @@ a{
 .footer-copyright .button:focus {
     color: #000000; 
     background-color: #ffffff;
+}
+
+.visually-hidden{
+    display: none;
 }
