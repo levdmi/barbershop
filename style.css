@@ -191,30 +191,79 @@ a{
 .gallery-content{
     background-color: #cccccc;
     border: 7px solid #ffffff;
+    height: 165px;
+    margin: 0;
+}
+
+.gallery-container{
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content img{
+    width: 280px;
+    height: 165px;
+}
+
+.gallery-button{
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back{
+    left: 0;
+}
+
+.gallery-button-next{
+    right: 0;
+}
+
+.gallery h2{
+    margin-bottom: 10px;
 }
 
 .contacts{
-    width: 385;
+    width: 385px;
 }
 
 .appointment{
     width: 300px;
 }
 
+.appointment-info{
+    margin:0 0 15px;
+}
+
 .appointment-form{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .appointment-item{
-    display: flex;
-    flex-direction: column;
+    width: 140px;
+    margin:0 0 10px;
+}
+
+.appointment-item label{
+    display: block;
+    margin: 0 0 10px 15px;
 }
 
 .appointment-item input{
     font: inherit;
+    padding: 8px 15px;
     background-color: transparent;
     border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.appointment .button{
+    display: block;
+    width: 100%;
+    margin: 10px 0 0;
 }
 
 .appointment-item input:focus{
