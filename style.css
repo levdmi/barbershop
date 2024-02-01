@@ -21,6 +21,26 @@ button {
     cursor: pointer;
 }
 
+* {
+    box-sizing: border-box
+}
+
+p {
+    margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 
 /*HEADER*/
 
@@ -509,6 +529,8 @@ a {
 
 .modal {
     position: fixed;
+    width: 100%;
+    max-width: 460px;
     color: #000000;
     background-color: #f8f8f8;
     background-image: url('img/pattern-light\ 2.png');
@@ -537,25 +559,79 @@ a {
 
 .login-form input[type='text'],
 .login-form input[type='password'] {
-    width: 300px;
-    padding: 10px 40px 15px 15px;
+    width: 100%;
+    padding: 15px 40px 15px 15px;
     color: #000000;
-    text-transform: uppercase;
     background-color: #f8f8f8;
     border: 2px solid black;
+    margin: 10px 0px;
 }
 
-.login-form input:focus{
+.login-form input:focus {
     border-color: #663d15;
 }
 
-.login-form,.login-help{
+.login-form,
+.login-help {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 15px 0 0;
+    margin: 15px 0;
 }
 
-.login-icon-user{
+.login-icon-user {
     background-image: url('svg/user.svg');
+    background-repeat: no-repeat;
+    background-position: 270px center;
+}
+
+.login-form p {
+    width: 100%;
+}
+
+.login-icon-password {
+    background-image: url('svg/lock.svg');
+    background-repeat: no-repeat;
+    background-position: 270px center;
+}
+
+.login-checkbox {
+    position: relative;
+    cursor: pointer;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+
+.checkbox-indicator {
+    display: inline-block;
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid black;
+}
+
+.checkbox-text {
+    position: relative;
+    top: -3px;
+    user-select: none;
+}
+
+input[ type='checkbox']:focus+.checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+input[ type='checkbox']:checked+.checkbox-indicator::after,
+input[ type='checkbox']:checked+.checkbox-indicator::before{
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
 }
