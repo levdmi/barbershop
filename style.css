@@ -562,8 +562,18 @@ a {
     }
 }
 
+@keyframes faidin {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .modal-error {
-    animation: shake !important;
+    animation: shake;
     animation-duration: 0.6s;
 }
 
@@ -696,7 +706,81 @@ input[ type='checkbox']:checked+.checkbox-indicator::before {
 }
 
 .modal-show {
-    display: block;
+    display: block !important;
+}
+
+.modal-show-animation {
     animation: bounce;
     animation-duration: 0.6s;
+}
+
+.modal-map {
+    display: none;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 560px;
+    border: 7px solid white;
+}
+
+.modal-map iframe{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
+.modal-map-animation{
+    animation:faidin ;
+    animation-duration: .5s;
+}
+
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter{
+    width: 180px;
+}
+
+.filter fieldset{
+    padding: 0;
+    margin: 0 0 30px;
+    border: none;
+}
+
+.filter legend{
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter ul{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.filter-option{
+    margin-bottom: 20px;
+    padding-left: 45px;
+}
+
+.filter-option label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-input-checkbox +label::before{
+    content: '';
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
 }
