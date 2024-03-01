@@ -784,3 +784,157 @@ list-style: none;
     height: 16px;
     border: 2px solid #000000;
 }
+
+.filter-input-checkbox +label::after{
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-image: url('./svg/cross.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before{
+    content: '';
+    position: absolute;
+    left: -42px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.filter-input-radio + label::after{
+    content: '';
+    position: absolute;
+    left: -36px;
+    top:5px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.catalog{
+    width: 700px;
+}
+
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0 25px;
+    list-style: none;
+}
+
+.catalog-item{
+    width: 220px;
+    margin: 0 20px 20px 0;
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.catalog-item a{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-item h3{
+    order: 1;
+    margin: 17px 15px 10px;
+}
+
+.catalog-category{
+    display: block;
+}
+
+.catalog-item-image{
+    width: 220px;
+    height: 165px;
+    margin: 0;
+}
+
+.catalog-item-price{
+    display: flex;
+    margin: 0 15px 15px;
+}
+
+.catalog-item-price b{
+    width: 112px;
+    padding: 10px 25px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+.catalog-item-price .button{
+    width: 70px;
+    padding: 10px 13px;
+}
+
+.pagination-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 5px;
+}
+
+.pagination-item a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000000;
+}
+
+.inner-page{
+    color:#000000;
+    background-color: #f9f6f3;
+    background-image: url('./img/pattern-light\ 2.png');
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.breadcrumbs{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0 50px;
+    list-style: none;
+}
+
+.breadcrumbs li{
+    position: relative;
+    margin-right: 40px;
+}
+
+.breadcrumbs li::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -25px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-current{
+    color: #aba9a7;
+}
+
+.breadcrumbs-current::after{
+    display: none;
+}
