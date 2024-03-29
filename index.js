@@ -9,17 +9,19 @@ window.addEventListener('DOMContentLoaded', () => {
     const mapDialog= document.querySelector('.modal-map')
     const mapclose = document.querySelector('.map-modal-close')
     console.log(maplink, mapDialog, mapclose)
-    maplink.addEventListener('click',event =>{
-        event.preventDefault()
-        mapDialog.classList.add('modal-show')
-        mapDialog.classList.add('modal-map-animation')
-        setTimeout(() => {
-            mapDialog.classList.remove('modal-map-animation')
-        }, 500)
-    })
-    mapclose.addEventListener('click',(event)=>{
-        mapDialog.classList.remove('modal-show')
-    })
+    if(maplink){
+        maplink.addEventListener('click',event =>{
+            event.preventDefault()
+            mapDialog.classList.add('modal-show')
+            mapDialog.classList.add('modal-map-animation')
+            setTimeout(() => {
+                mapDialog.classList.remove('modal-map-animation')
+            }, 500)
+        })
+        mapclose.addEventListener('click',(event)=>{
+            mapDialog.classList.remove('modal-show')
+        })
+    }
     loginLink.addEventListener('click', (event) => {
         event.preventDefault()
         entrance.classList.add('modal-show')

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="inner-page">
     
     <!--header-->
-    <header class="main-header">
+    <header class="main-header margin-bottom-none">
         <nav class="main-navigation">
-            <div class="main-navigation-wrapper">
+            <div class="main-navigation-wrapper margin-bottom-none">
                 <div class="container">
                     <ul class="site-navigation">
                         <li>
@@ -278,27 +280,33 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
                 <label class="visually-hidden" for="user-login">Логин</label>
                 <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
             </p>
             <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                <input class="login-icon-password" id="user-password" type="password" name="password"
+                    placeholder="Пароль">
             </p>
-            <p class="login-password-info">
+            <p class="login-help">
                 <label class="login-checkbox">
                     <input type="checkbox" name="remember" class="visually-hidden">
                     <span class="checkbox-indicator"></span>
-                    
-                    Запомните меня
+                    <span class="checkbox-text">Запомните меня</span>
                 </label>
-                <a class="restore" href="#">Я забыл пароль</a>
+                <a class="restore">Я забыл пароль</a>
             </p>
             <button class="button" type="submit">Войти</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                fill="none">
+                <path
+                    d="M16.775 2.03222C16.8983 2.15394 16.9677 2.32015 16.9677 2.49362C16.9677 2.66709 16.8983 2.83331 16.775 2.95503L11.7374 8.03859C11.6141 8.16031 11.5447 8.32653 11.5447 8.5C11.5447 8.67347 11.6141 8.83969 11.7374 8.96141L16.8073 14.045C16.9306 14.1667 17 14.3329 17 14.5064C17 14.6798 16.9306 14.8461 16.8073 14.9678L14.9666 16.8134C14.71 17.0622 14.3029 17.0622 14.0463 16.8134L8.94403 11.746C8.68742 11.4972 8.28029 11.4972 8.02368 11.746L2.95371 16.7972C2.6971 17.046 2.28998 17.046 2.03337 16.7972L0.192677 14.984C0.0694102 14.8623 0 14.696 0 14.5226C0 14.3491 0.0694102 14.1829 0.192677 14.0612L5.27879 8.96141C5.40206 8.83969 5.47147 8.67347 5.47147 8.5C5.47147 8.32653 5.40206 8.16031 5.27879 8.03859L0.192677 2.95503C0.0694102 2.83331 0 2.66709 0 2.49362C0 2.32015 0.0694102 2.15394 0.192677 2.03222L2.04951 0.186593C2.30612 -0.0621977 2.71325 -0.0621977 2.96986 0.186593L8.02368 5.27016C8.14507 5.39375 8.31085 5.46335 8.48385 5.46335C8.65686 5.46335 8.82263 5.39375 8.94403 5.27016L14.014 0.202783C14.2706 -0.0460081 14.6777 -0.0460081 14.9343 0.202783L16.775 2.03222Z"
+                    fill="#f3f3f3" />
+            </svg></button>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
