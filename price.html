@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
+    <title>Прайс-лист</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
-        rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    rel="stylesheet">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">]
 </head>
-
-<body>
-
-    <!--HEADER-->
-
-    <header class="main-header">
+<body class="inner-page">
+    <header class="main-header margin-bottom-none">
         <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/index-logo.png" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
-            </a>
-            <div class="main-navigation-wrapper">
+            <div class="main-navigation-wrapper margin-bottom-none">
                 <div class="container">
                     <ul class="site-navigation">
                         <li>
@@ -48,125 +40,20 @@
             </div>
         </nav>
     </header>
-
-
-    <!--HEADER-->
-
-    <!--MAIN-->
-
     <main class="container">
-        <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-
-        <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="features-list">
-                <li class="feature-item">
-                    <h3>Быстро</h3>
-                    <img src="img/Shape_1.png" alt="" class="shape">
-                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
-                        стрижки-минутки!</p>
+        <div class="inner-page-container">
+            <h1 class="page-title">Прайс-лист</h1>
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="index.html">Главная</a>
                 </li>
-                <li class="feature-item">
-                    <h3>Круто</h3>
-                    <img src="img/Shape_1.png" alt="" class="shape">
-                    <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае
-                        внешне.</p>
+                <li class="breadcrumbs-current">
+                    Прайс-лист
                 </li>
-                <li class="feature-item">
-                    <h3>Дорого</h3>
-                    <img src="img/Shape_1.png" alt="" class="shape">
-                    <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает
-                        определенный
-                        статус?</p>
-                </li>
+                
             </ul>
-        </section>
-
-        <!--news-->
-
-        <div class="index-columns">
-            <section class="news">
-                <h2>Новости</h2>
-                <ul class="news-list">
-                    <li class="news-item">
-                        <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-                        <time datetime="2016-01-11">11 января</time>
-                    </li>
-                    <li class="news-item">
-                        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград
-                            пополнил
-                            наши стройные ряды</p>
-                        <time datetime="2016-01-18">18 января</time>
-                    </li>
-                </ul>
-                <a class="button" href="news.html">Все новости</a>
-            </section>
-
-            <section class="gallery">
-                <h2>Фотогалерея</h2>
-                <div class="gallery-container">
-                    <figure class="gallery-content">
-                        <a href="#">
-                            <img src="img/Layer_21.png" width="286" height="164" alt="Интерьер">
-                        </a>
-                    </figure>
-                    <button class="button gallery-button gallery-button-back" type="button">Назад</button>
-                    <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
-                </div>
-            </section>
-        </div>
-
-
-        <!--contacts-->
-
-        <div class="index-columns">
-            <section class="contacts">
-                <h2>Контактная информация</h2>
-                <p>
-                    Барбершоп «Бородинский»
-                    <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-                    <br> Телефон: +7 (812) 666-02-66
-                </p>
-                <p>
-                    Время работы:
-                    <br> пн—пт: с 10:00 до 22:00
-                    <br> сб—вс: с 10:00 до 19:00
-                </p>
-                <a class="button map" href="map.html">Как проехать</a>
-                <a class="button" href="contacts.html">Обратная связь</a>
-            </section>
-
-            <!--appointment-->
-
-            <section class="appointment">
-                <h2>Записаться</h2>
-                <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-                </p>
-                <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="appointment-item">
-                        <label for="appointment-date">Дата</label>
-                        <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-time">Время</label>
-                        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-name">Ваше имя</label>
-                        <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-                    </p>
-                    <p class="appointment-item">
-                        <label for="appointment-phone">Телефон</label>
-                        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
-                    </p>
-                    <button class="button" type="submit">Отправить</button>
-                </form>
-            </section>
         </div>
     </main>
-
-    <!--footer-->
-
     <footer class="main-footer">
         <div class="container">
             <p class="footer-contacts">
@@ -220,7 +107,6 @@
         </div>
     </footer>
 
-    <!--modal-->
 
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
@@ -252,18 +138,6 @@
                     fill="#f3f3f3" />
             </svg></button>
     </section>
-
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добратся</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CKQjQL1X" frameborder="1" allowfullscreen="true"></iframe>
-       <button class="map-modal-close modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                fill="none">
-                <path
-                    d="M16.775 2.03222C16.8983 2.15394 16.9677 2.32015 16.9677 2.49362C16.9677 2.66709 16.8983 2.83331 16.775 2.95503L11.7374 8.03859C11.6141 8.16031 11.5447 8.32653 11.5447 8.5C11.5447 8.67347 11.6141 8.83969 11.7374 8.96141L16.8073 14.045C16.9306 14.1667 17 14.3329 17 14.5064C17 14.6798 16.9306 14.8461 16.8073 14.9678L14.9666 16.8134C14.71 17.0622 14.3029 17.0622 14.0463 16.8134L8.94403 11.746C8.68742 11.4972 8.28029 11.4972 8.02368 11.746L2.95371 16.7972C2.6971 17.046 2.28998 17.046 2.03337 16.7972L0.192677 14.984C0.0694102 14.8623 0 14.696 0 14.5226C0 14.3491 0.0694102 14.1829 0.192677 14.0612L5.27879 8.96141C5.40206 8.83969 5.47147 8.67347 5.47147 8.5C5.47147 8.32653 5.40206 8.16031 5.27879 8.03859L0.192677 2.95503C0.0694102 2.83331 0 2.66709 0 2.49362C0 2.32015 0.0694102 2.15394 0.192677 2.03222L2.04951 0.186593C2.30612 -0.0621977 2.71325 -0.0621977 2.96986 0.186593L8.02368 5.27016C8.14507 5.39375 8.31085 5.46335 8.48385 5.46335C8.65686 5.46335 8.82263 5.39375 8.94403 5.27016L14.014 0.202783C14.2706 -0.0460081 14.6777 -0.0460081 14.9343 0.202783L16.775 2.03222Z"
-                    fill="#000000" />
-            </svg></button>
-    </section>
-    <script src="index.js"></script>
+    <script src="index.js"></script> 
 </body>
-
 </html>
