@@ -51,4 +51,31 @@ window.addEventListener('DOMContentLoaded', () => {
             entrance.classList.remove('modal-show')
         }
     })
+    
+    const shopList = Array.from(document.querySelectorAll('.catalog-list .catalog-item .catalog-item-title'))
+    const filters = Array.from(document.querySelectorAll('.checkboxes .filter-option input'))
+    function changeShopList(event){
+        const targetLable = event.target.name
+        const action = event.target.checked
+        const indexForChange = []
+        for(const key in shopList){
+            if(shopList[key].innerHTML === `«${targetLable}»`){
+                indexForChange.push(key)
+            }
+        }
+        for(const value of indexForChange){
+            const el = shopList[value].parentNode.parentNode.parentNode
+            if(action){
+                el.style.display = ''
+            }
+            else{
+                el.style.display = 'none'
+            }
+        }
+    }
+    if(filters.length){
+        for(const filter of filters){
+            filter.addEventListener('input',changeShopList)
+        }
+    }
 })
